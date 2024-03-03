@@ -126,10 +126,11 @@
   }
 
   function eliminarCancion(i, id) {
-    axios.delete(url + "/" + id).then(() => {
-      alert("Canción " + canciones[i].titulo + " eliminada");
-      getData();
-    });
+    alert(canciones[i].cancion);
+     axios.delete(url + "/" + id).then(() => {
+       alert("Canción " + canciones[i].cancion + " eliminada");
+       getData();
+     });
   }
 
   function prepararCancion(i, id) {
